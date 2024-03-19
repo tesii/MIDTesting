@@ -27,7 +27,7 @@ public class StudentRegistration {
     @Temporal(TemporalType.DATE)
     private Date registrationDate; // New field for registration date
 
-    @ManyToOne
+    @OneToMany
     @JoinColumn(name = "studentId", referencedColumnName = "student_id", insertable = false, updatable = false)
     private Student student;
 
